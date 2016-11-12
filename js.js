@@ -1,19 +1,25 @@
 //Prepares the document
 $(document).ready(function(){
+	//Updates circle size
+	makeCircle()
+	window.onresize = makeCircle
 
 	//Makes the "joystick" movable and constrains it to a certain area
 	$("#robotDiv").draggable({
 		addClasses: false,
-		containment: [200, 200, 600, 400]
+		containment: '#joystickWrapper'
 	 });
 
 	//Moves the "joystick" back to center if clicked for 0 velocity and 0 radius
 	$("#resetDiv").click(function(){
+		var h = $("body").height()
+		var robotTopMargin = -$("#robotDiv").height()/2
+		var robotLeftMargin = -$("#robotDiv").width()/2
 		$("#robotDiv").css({
 			"top":"50%",
 			"left":"50%",
-			"margin-top":"-5em",
-			"margin-left":"-5em"
+			"margin-top": robotTopMargin,
+			"margin-left": robotLeftMargin
 		})
 	});
 
@@ -23,7 +29,7 @@ $(document).ready(function(){
 	},300);
 });
 
-//Function to get the "joystick" coordinates
+//Function to get the "joystick" coorindinates
 function getCoords(){
 
 	//Gets the position of the corners of the corresponding div and its width/height
@@ -37,4 +43,15 @@ function getCoords(){
 
 	//Returns the "joystick" current center location
 	return [centerX, centerY]
+}
+
+//Makes the circle
+function makeCircle(){
+	var h = $("body").height()
+	$("#robotDiv").height(h/10);
+	$("#robotDiv").width(h/10);
+	$("#robotDiv").css({
+		"margin-top": -h/20,
+		"margin-left": -h/20
+	})
 }
