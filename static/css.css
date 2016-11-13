@@ -1,0 +1,98 @@
+html,body{
+	height:100%;
+	width:100%;
+	margin:0px;
+	padding:0px;
+	background-color:#eeeeee;
+	font-family: Verdana;
+	color:#222222;
+}
+#sensorDataWrapper{
+	position: fixed;
+	left:0%;
+	top:0%;
+	height:50%;
+	width:50%;
+	border-size:5%;
+	border-style: solid;
+	border-color:#64a70b;
+	box-sizing:border-box;
+}
+#canvas{
+	position: fixed;
+	left:50%;
+	top:0%;
+	height:50%;
+	width:50%;
+	border-size:5%;
+	border-style: solid;
+	border-color:#64a70b;
+	box-sizing:border-box;
+}
+#resetDiv{
+	border-style:solid;
+	border-color:#64a70b;
+	border-width:1%;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	top:50%;
+	left:13.5%;
+	width:10%;
+	margin-left:-5%;
+	margin-top:-2.5%;
+	background-color:#eeeeee;
+}
+#positionDiv{
+	border-style:solid;
+	border-color:#64a70b;
+	border-width:1%;
+	background-color: white;
+	text-align: center;
+	position: relative;
+	top:42.5%;
+	left:76%;
+	width:27.5%;
+	margin-left:-5%;
+	margin-top:-2.5%;
+	background-color:#eeeeee;
+}
+#robotDiv {
+	background-color:#64a70b;
+	border-radius: 50%;
+	text-align: center;
+	vertical-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-color:white;
+	border-style:solid;
+	border-width: 10%;
+}
+#joystickWrapper {
+	background-color:white;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 50%;
+	border-size:5%;
+	border-style: solid;
+	border-color:#64a70b;
+	box-sizing:border-box;
+	background-color:#eeeeee;
+}
+#robotDivWrapper {
+	background-color:white;
+	position: absolute;
+	top: 0%;
+	left: 30%;
+	width: 40%;
+	height: 100%;
+	border-size:5%;
+	border-style: solid;
+	border-color:#64a70b;
+	box-sizing:border-box;
+	background-color:#eeeeee;
+	background-image:url("MotionPad.svg");
+	background-position: center;
+}

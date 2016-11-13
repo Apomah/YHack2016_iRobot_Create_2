@@ -5,11 +5,55 @@
 		<script src="jquery-3.1.1.js"></script>
 		<link rel="stylesheet" href="jquery-ui.min.css">
 		<script src="jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="vis.css">
+		<script src="vis.js"></script>
+		<link href="vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+		<script type="text/JavaScript" src="jsDraw2D.js"></script>
 		<script src="js.js"></script>
 	</head>
 	<body id="body">
+		<div id= "sensorDataWrapper">
+			<span id="distanceSensor">Distance: 0mm</span>
+			<br />
+			<span id="angleSensor">Angle: 0</span>
+			<br />
+			<span id="cliffSensorLeft" class="cliffSensor">Cliff Left: false</span>
+			<br />
+			<span id="cliffSensorFrontLeft" class="cliffSensor">Cliff Front Left: false</span>
+			<br />
+			<span id="cliffSensorFrontRight" class="cliffSensor">Cliff Front Right: false</span>
+			<br />
+			<span id="cliffSensorRight" class="cliffSensor">Cliff Right: false</span>
+			<br />
+			<span id="wallSensor" class="wallSensor">Wall Signal: false</span>
+			<br />
+			<span id="leftWheelVelocity" class="wheelVelocity">Left Wheel Velocity: 0mm/s</span>
+			<br />
+			<span id="rightWheelVelocity" class="wheelVelocity">Right Wheel Velocity: 0mm/s</span>
+			<br />
+			<span id="leftEncoderCount" class="encoderCount">Left Encoder Count: 0revs</span>
+			<br />
+			<span id="rightEncoderCount" class="encoderCount">Right Encoder Count: 0revs</span>
+			<br />
+			<span id="lightBumpRight" class="lightBump">Light Bumper Sensor Right: 0</span>
+			<br />
+			<span id="lightBumpFrontRight" class="lightBump">Light Bumper Sensor Front Right: 0</span>
+			<br />
+			<span id="lightBumpCenterRight" class="lightBump">Light Bumper Sensor Center Right: 0</span>
+			<br />
+			<span id="lightBumpCenterLeft" class="lightBump">Light Bumper Sensor Center Left: 0</span>
+			<br />
+			<span id="lightBumpFrontLeft" class="lightBump">Light Bumper Sensor Front Left: 0</span>
+			<br />
+			<span id="lightBumpLeft" class="lightBump">Light Bumper Sensor Left: 0</span>
+		</div>
+		<div id= "canvas">
+		</div>
 		<div id = "joystickWrapper">
 			<div id="resetDiv">Reset</div>
+			<div id="positionDiv">
+				<p id="velocityP">Velocity: 0.00mm/s</p>
+			</div>
 			<div id = "robotDivWrapper">
 				<div id="robotDiv">&nbsp</div>
 			</div>
