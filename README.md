@@ -5,3 +5,6 @@ This web application utilizes Python, Flask for Python, AJAX, JSON, HTML, CSS, J
 
 For more information please see the post at devpost.com:
 https://devpost.com/software/robo-my-moba
+To see a video of the Roomba in action see the videos at youtube.com:
+https://www.youtube.com/watch?v=uA9115cqflo
+https://www.youtube.com/watch?v=x6NZEFUhVSY
