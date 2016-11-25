@@ -12,7 +12,7 @@ Run in terminal (without quotes) "sudo python finalserver.py"
 Type the URL given after running the command into your browser of choice
 
 
-For more information please see the post at devpost.com:
+For more information please see the post at devpost.com:  
 https://devpost.com/software/robo-my-moba  
 
 To see a video of the Roomba in action see the videos at youtube.com:  
